@@ -1,0 +1,44 @@
+.detail{
+  width: 100%;
+}
+.detail .wrapper-detail{
+  width: 90%;
+  margin: 0 auto;
+}
+.detail .wrapper-detail .titulo h2 a{
+  color: #22C55E;
+}
+.detail .wrapper-detail .item{
+  display: flex;
+}
+.tarjeta-1{
+  width: 35%;
+}
+.tarjeta-1 img{
+  width: 100%;
+}
+.tarjeta-2{
+  padding: 0 25px;
+  width: 65%;
+}
+.tarjeta-2 .titulo-drink h3{
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+.bold{
+  font-weight: bold;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .detail .wrapper-detail .item{
+    display: block;
+  }
+  .tarjeta-1{
+    width: 100%;
+  }
+  .tarjeta-2{
+    width: 100%;
+    padding: 0;
+  }
+}

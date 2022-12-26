@@ -1,0 +1,14 @@
+npm install primeng --save --force
+npm install primeicons --save --force
+npm install @angular/animations --save --force
+npm install primeflex --save --force
+
+ng generate component dashboard
+ng generate component lista-drinks
+ng generate component detail-drink
+ng generate module app-routing --flat --module=app
+
+
+npm install @fortawesome/fontawesome-svg-core --save --force
+npm install @fortawesome/free-solid-svg-icons --save --force
+npm install @fortawesome/angular-fontawesome --save --force

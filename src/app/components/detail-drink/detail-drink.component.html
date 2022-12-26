@@ -1,0 +1,49 @@
+<div class="detail">
+  <div class="wrapper-detail">
+    <div class="titulo">
+      <h2><a href="javascript:void(0);" (click)="clickAtras()"><fa-icon [icon]="faCircleChevronLeft"></fa-icon></a> / Detalle de bebida</h2>
+    </div>
+    <div class="item">
+      <div class="tarjeta-1">
+        <img src="{{drinkItem.strDrinkThumb}}" alt="">
+      </div>
+      <div class="tarjeta-2">
+        <div class="titulo-drink">
+          <h3>{{drinkItem.strDrink}}</h3>
+        </div>
+        <div class="ingredientes">
+          <p class="bold">Ingredientes: </p>
+          <ul>
+            <li *ngIf="drinkItem.strIngredient1">{{ drinkItem.strMeasure1 }} {{ drinkItem.strIngredient1 }}</li>
+            <li *ngIf="drinkItem.strIngredient2">{{ drinkItem.strMeasure2 }} {{ drinkItem.strIngredient2 }}</li>
+            <li *ngIf="drinkItem.strIngredient3">{{ drinkItem.strMeasure3 }} {{ drinkItem.strIngredient3 }}</li>
+            <li *ngIf="drinkItem.strIngredient4">{{ drinkItem.strMeasure4 }} {{ drinkItem.strIngredient4 }}</li>
+            <li *ngIf="drinkItem.strIngredient5">{{ drinkItem.strMeasure5 }} {{ drinkItem.strIngredient5 }}</li>
+            <li *ngIf="drinkItem.strIngredient6">{{ drinkItem.strMeasure6 }} {{ drinkItem.strIngredient6 }}</li>
+            <li *ngIf="drinkItem.strIngredient7">{{ drinkItem.strMeasure7 }} {{ drinkItem.strIngredient7 }}</li>
+            <li *ngIf="drinkItem.strIngredient8">{{ drinkItem.strMeasure8 }} {{ drinkItem.strIngredient8 }}</li>
+            <li *ngIf="drinkItem.strIngredient9">{{ drinkItem.strMeasure9 }} {{ drinkItem.strIngredient9 }}</li>
+            <li *ngIf="drinkItem.strIngredient10">{{ drinkItem.strMeasure10 }} {{ drinkItem.strIngredient10 }}</li>
+            <li *ngIf="drinkItem.strIngredient11">{{ drinkItem.strMeasure11 }} {{ drinkItem.strIngredient11 }}</li>
+            <li *ngIf="drinkItem.strIngredient12">{{ drinkItem.strMeasure12 }} {{ drinkItem.strIngredient12 }}</li>
+            <li *ngIf="drinkItem.strIngredient13">{{ drinkItem.strMeasure13 }} {{ drinkItem.strIngredient13 }}</li>
+            <li *ngIf="drinkItem.strIngredient14">{{ drinkItem.strMeasure14 }} {{ drinkItem.strIngredient14 }}</li>
+            <li *ngIf="drinkItem.strIngredient15">{{ drinkItem.strMeasure15 }} {{ drinkItem.strIngredient15 }}</li>
+          </ul>
+        </div>
+        <div class="preparacion">
+          <p class="bold">Preparación: </p>
+          <ul>
+            <li>{{ drinkItem.strInstructions }}</li>
+          </ul>
+        </div>
+        <div class="type">
+          <p class="bold">Tipo de vaso: </p>
+          <ul>
+            <li>{{ drinkItem.strGlass }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

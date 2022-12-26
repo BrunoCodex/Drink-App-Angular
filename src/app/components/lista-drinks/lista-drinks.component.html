@@ -1,0 +1,18 @@
+<div class="drinks">
+  <div class="titulo">
+    <h2><a [routerLink]="['/']"><fa-icon [icon]="faHome"></fa-icon></a> / {{title}}</h2>
+  </div>
+  <div class="wrapper-drinks">
+    <div class="item" *ngFor="let drink of drinkList">
+      <div class="imagen-drink">
+        <img src="{{ drink.strDrinkThumb }}" alt="{{ drink.strDrink }}">
+      </div>
+      <div class="titulo-drink">
+        <p>Nombre: <a [routerLink]="['/drink', drink.idDrink]">{{drink.strDrink}}</a></p>
+      </div>
+      <div class="boton">
+        <a [routerLink]="['/drink', drink.idDrink]" class="p-button-success">Ver detalle</a>
+      </div>
+    </div>
+  </div>
+</div>
